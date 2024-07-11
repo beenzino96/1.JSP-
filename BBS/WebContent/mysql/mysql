@@ -1,0 +1,25 @@
+#참조사항
+#보통 권장사항은 데이터베이스에서 코드를 칠때는 대문자를 기본으로 하는걸 권장함.
+#이유는 모르지만, 대문자로하든 소문자로 하든 작동은 잘한다.
+
+#user 테이블
+create table user (
+userID varchar(20),
+userPassword varchar(20),
+userName varchar(20),
+userGender varchar(20),
+userEmail varchar(50),
+primary key(userID)
+);
+
+
+#bbs테이블
+create table bbs (
+bbsID int,
+bbsTitle varchar(50),
+userID varchar(20),
+bbsDate datetime,
+bbsContent varchar(2048),
+bbsAvailable int,
+primary key(bbsID)
+);
