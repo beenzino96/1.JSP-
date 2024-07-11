@@ -80,20 +80,24 @@
 		</ul>
 	</div>
 </nav>
-
+<!-- 컨테이너 감싸기   -->
 <div class="container">
 	<div class="col-lg-4"></div>
 	<div class="col-lg-4">
 		<div class="jumbotron" style="padding-top:20px;">
+<!-- 양식만들기 form   -->
 			<form method="post" action="loginAction.jsp">
+<!-- method post 정보 숨기기 액션 로그인액션이라는 페이지로 정보 보내기   -->
 				<h3 style="text-align:center">로그인 화면</h3>
+<!-- 텍스트 가운데로 정렬기   -->
 				<div class="form-group">
-					<input type ="text" class="form-control" placeholder="아이디" name="userID" mexlength="20">
+<!--  정보를 넣을 수있는 input placehorder 어떤것도 넣지않았을떄 띄어지는 정보 name은 유정 정보 mexlength 아이디 20자로 제  --> 
+input type ="text" class="form-control" placeholder="아이디" name="userID" mexlength="20">
 				</div>
 				<div class="form-group">
 					<input type="password" class="form-control" placeholder="비밀번호" name="userPassword" mexlength="20">
 				</div>
-				<input type="submit" class="btn btn-primary form-control"  value="로그인">
+<!-- 버튼 primary 로그인 버  -->		<input type="submit" class="btn btn-primary form-control"  value="로그인">
 			</form>		
 		</div>
 	</div>
